@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            font-size: large;
+        }
+        .container{
+            width: 70%;
+            height: 100%;
+            margin: auto;
+            padding: 10px;
+            border: 2px solid black;
+            background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+
+        input{
+            width: 40%;
+            padding: 10px;
+            margin: 6px;
+        }
+
+        #review-box{
+            height: 40px;
+        }
+
+        .options{
+            position: absolute;
+            left: 420px;
+            top: 210px;
+        }
+
+        .gender input{
+            width: 10px;
+        }
+
+        .gender{
+            position: absolute;
+            top: 436px;
+            left: 420px;
+        }
+
+        .address{
+            position: absolute;
+            top: 472px;
+            left: 420px;
+            height: 50px;
+        }
+
+        textarea{
+            width: 200px;
+        }
+
+        .city{
+            position: absolute;
+            top: 524px;
+            left: 420px;
+            width: 300px;
+            
+        }
+
+        .pin{
+            position: absolute;
+            top: 576px;
+            left: 420px;
+            width: 300px;
+        }
+
+        .state{
+            position: absolute;
+            top: 628px;
+            left: 420px;
+            width: 300px;
+        }
+
+        .country{
+            position: absolute;
+            top: 680px;
+            left: 420px;
+            width: 300px;
+        }
+
+        .hobby input{
+            width: 10px;
+            height: 20px;
+        }
+
+        .hobby{
+            position: absolute;
+            top: 740px;
+            left: 420px;
+            width: 300px;  
+        }
+
+        .but{
+            position: absolute;
+            top: 740px;
+            left: 480px;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+
+            <div id="flname">
+                <h5 >1. FIRST NAME
+                <input type="text" id="input" name="fname" >
+                ( max 30 characters a-z and A-Z)</h5>
+
+                <h5>2. LAST NAME
+                 <input type="text" id="input" name="lname" >
+                ( max 30 characters a-z and A-Z)</h5>
+            </div>
+
+            <div class="dob">
+                <h5 for="">3. DATE OF BIRTH</h5>
+                <div class="options">
+                <select name="review" id="review-box" style="width: 80px;">
+                    <option>Day:</option>
+                    <optgroup>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>                      
+                    </optgroup>
+                </select>
+
+                    <select name="review" id="review-box" style="width: 80px;">
+                    <option>Month:</option>
+                    <optgroup>
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>Aug</option>
+                        <option>Sep</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                    </optgroup>
+                </select>
+                <select name="review" id="review-box" style="width: 80px;">
+                    <option>Year:</option>
+                    <optgroup>
+                        <option>2000</option>
+                        <option>2001</option>
+                    </optgroup>
+                </select>
+            </div>
+            </div>
+
+            <div id="flname">
+                <h5 >4. EMAIL ID
+                <input type="text" id="input" name="fname" >
+                ( max 30 characters a-z and A-Z)</h5>
+
+                <h5>MOBILE NUMBER
+                 <input type="number" id="input" name="lname" >
+                ( 10 digit number)</h5>
+            </div>
+
+            <div >
+                <h5>5. GENDER</h5>
+                <div class="gender">
+                <input type="radio" name="gender" id="mf">  Male
+                <input type="radio" name="gender" id="mf">  Female
+                </div>
+            </div>
+
+            <div >
+                <h5>6. ADDRESS</h5>
+                <div class="address">
+                <textarea name="addr" id="add"></textarea>
+                
+                </div>
+            </div>
+
+            <div class="c">
+                <h5>7. CITY</h5>
+                <div class="city">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="p">
+                <h5>8.  CODE</h5>
+                <div class="pin">
+                    <input type="number">
+                </div>
+            </div>
+
+            <div class="s">
+                <h5>9. STATE</h5>
+                <div class="state">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="c">
+                <h5>10. COUNTRY</h5>
+                <div class="country">
+                    <input type="text">
+                </div>
+            </div>
+
+            <!-- <div class="h">
+                <h5>HOBBIES</h5>
+                <div class="hobby">
+                    <input type="checkbox">Drawing
+                    <input type="checkbox">Singing
+                    <input type="checkbox">Dancing
+              </div>
+            </div> -->       
+        </form>
+
+
+
+
+
+
+        
+    </div>
+</body>
+</html>

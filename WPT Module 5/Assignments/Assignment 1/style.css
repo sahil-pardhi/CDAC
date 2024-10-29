@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .container {
+        width: 60%;
+        margin: auto;
+        padding: 20px;
+        border: 2px solid black;
+        box-shadow: 10px 10px 50px black;
+        display: flex;
+        flex-direction: column;
+    }
+
+  .heading{
+    font-family: 'Times New Roman', Times, serif !important;
+    font-style: bold;
+    font-weight: bolder;
+    font-size: 50px;
+    color: blue;
+    text-align: center;
+  }
+
+  .gmailphn{
+    text-align: center;    
+}
+
+.education, .projects{
+    display:flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.projects{
+    padding-bottom: 10px;
+}
+
+h3{
+    color: blue;
+}
+
+
+.name{
+    font-weight: bold;
+    padding-top: 10px;
+}
+.edetails{
+    padding-bottom: 10px;
+    font-weight: lighter;
+}
+
+.prodetails{
+    padding-left: 20px;
+}
+
+.skillsdata{
+    padding: 10px;
+    text-align: left;
+
+}
+
+.adetails{
+    padding-top: 10px;
+}
+
