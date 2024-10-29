@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    background: #83587a;
+}
+.wrapper{
+    width: 400px;
+    height: 500px;
+    padding: 2rem 1rem;
+    margin: 80px auto;
+    background-color: #ffff;
+    border-radius: 10px; 
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0,0,0,0,1);
+      
+}
+
+h1{
+    font-size: 2rem;
+    color: #3d1635;
+    margin-bottom: 1.2rem;
+    margin-top: 1.3rem;
+}
+
+form input{
+    width: 92%;
+    height: 50px;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #e4e4e4;
+}
+
+button{
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    width: 90%;
+    color: #fff;
+    cursor: pointer;
+    background-color: #3d1635;
+}
+
+button:hover{
+    background-color: #57224c;
+}
+
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+input:focus{
+   border : 1px solid grey  ;          
+}
+
+.terms input{
+    height: 2em;
+    width: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.terms label{
+    padding-top: 60px;
+    font-size: 0.9rem;
+}
+
+.terms a{
+    color: #3d1635;
+    text-decoration: none;
+}
+
+.member{
+    font-size: 0.9rem;
+    margin-top: 1.4rem;
+    color: rgb(73, 72, 72);
+}
+
+.member a{
+    color: #3d1635;
+    text-decoration: none;
+}
+
+.recover{
+    text-align: right;
+    font-size: 0.7rem;
+    margin: 0.3rem 1.4rem 0 0;
+}
+
+.recover a{
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+}
