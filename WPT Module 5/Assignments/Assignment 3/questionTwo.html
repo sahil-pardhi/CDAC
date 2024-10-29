@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Two</title>
+        <style>
+            .containerForm{
+                width: 50%;
+                margin: auto;
+                background-color: beige;
+                margin-top: 40px;
+                padding: 20px;
+            }
+
+            .containerOutput{
+                width: 50%;
+                margin: auto;
+                background-color:bisque;
+                margin-top: 40px;
+                padding: 20px;
+            }
+
+        </style>
+    </head>
+<body>
+<div class="containerForm">
+    <h2>Form</h2>
+
+    <form id="myForm">
+      <label for="firstName">First Name:</label><br>
+      <input type="text" id="fname" name="firstName"><br><br>
+    
+      <label for="lastName">Last Name:</label><br>
+      <input type="text" id="lname" name="lastName"><br><br>
+    
+      <label for="contactNo">Contact No.:</label><br>
+      <input type="text" id="phn" name="contactNo"><br><br>
+    
+      <label for="email">Email Id:</label><br>
+      <input type="email" id="mail" name="email"><br><br>
+    
+      <button type="button" onclick="output()">Submit</button>
+    </form>
+</div>
+
+<div class="containerOutput">
+    <h3>Output</h3>
+    <div id="output"></div>
+    
+    <script>
+    function output() {
+      const firstName = document.getElementById("fname").value;
+      const lastName = document.getElementById("lname").value;
+      const contactNo = document.getElementById("phn").value;
+      const email = document.getElementById("mail").value;
+    
+      
+      const outputDiv = document.getElementById("output");
+      outputDiv.innerHTML = `<p>First Name: ${firstName}</p>
+                             <p>Last Name: ${lastName}</p>
+                             <p>Contact No.: ${contactNo}</p>
+                             <p>Email Id: ${email}</p>`;
+    }
+    </script>
+</div>
+
+
+</body>
+</html>

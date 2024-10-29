@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: auto;
+            margin-top: 70px;
+            padding: 20px;
+            text-align: justify;
+            background-color: beige;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam perspiciatis, suscipit, modi praesentium
+            eos accusamus, porro eum quam repudiandae distinctio nam officiis voluptatibus maxime recusandae amet
+            aliquam blanditiis? Quibusdam aperiam delectus soluta laborum voluptas in ullam quae atque cupiditate
+            nostrum quas deserunt, nam praesentium dolore autem sit consequuntur. Recusandae, est.Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Quasi fuga, fugiat consequatur harum illo iusto
+            ipsam, cum vitae quas quia sed quibusdam reprehenderit debitis dolorem!</p>
+        <button type="button" onclick="change()">Submit</button>
+    </div>
+
+    <script>
+        function change(){
+            const data = document.getElementById("para");
+            data.style.color = "Orange";
+            data.style.fontFamily = "monospace";
+            data.style.fontSize = "20px";
+        }
+    </script>
+</body>
+
+</html>

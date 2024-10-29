@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four</title>
+    <style>
+        .container {
+            width: 50%;
+            font-family: monospace;
+            margin: auto;
+            background-color: beige;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            
+        }
+
+        p b{
+            color: beige;
+        }
+
+        .hover-text {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <p class="hover-text" onmouseover="highlightBoldWords()" onmouseout="resetBoldWords()">
+            [On mouse over here bold words of the following paragraph will be highlighted]
+        </p>
+        <p>
+            We have just started this section for the users (<b>beginner</b> to <b>intermediate</b>) who
+            want to work with <b>various</b> JavaScript <b>problems</b> and write scripts online to
+            <b>test</b> their JavaScript <b>skill</b>.
+        </p>
+    </div>
+
+
+    <script>
+        function highlightBoldWords() {
+            const boldElements = document.querySelectorAll('b');
+            boldElements.forEach(el => el.style.color = 'orange');
+        }
+
+        function resetBoldWords() {
+            const boldElements = document.querySelectorAll('b');
+            boldElements.forEach(el => el.style.color = 'beige');
+        }
+    </script>
+</body>
+
+</html>

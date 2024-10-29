@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: auto;
+            background-color: beige;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: larger;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h3>Select an item to remove:</h3>
+
+        <select id="myDropdown">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="orange">Orange</option>
+            <option value="grape">Grape</option>
+            <option value="mango">Mango</option>
+        </select>
+
+        <br><br>
+        <button onclick="removeSelectedItem()">Remove Selected Item</button>
+
+        <script>
+            function removeSelectedItem() {
+                const dropdown = document.getElementById("myDropdown");
+                dropdown.remove(dropdown.selectedIndex);
+                
+            }
+        </script>
+    </div>
+
+
+</body>
+
+</html>
