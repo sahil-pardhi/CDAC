@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    
+        function processData(str, callback) {
+            console.log("...Original String...");
+            console.log(str)
+
+            console.log("...callBack Function...")
+            console.log(callback);
+
+            console.log("...Implementing the callback with the string ...")
+            var result = callback(str);
+            console.log("String in uppercase:", result); 
+        }
+    
+        processData("small", function(inputString) {
+            console.log("Inside callback function");
+            return inputString.toUpperCase(); 
+        });
+    
+    </script>
+    
+</body>
+</html>

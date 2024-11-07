@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fetchData(url, callback) {
+            console.log("Fetching data from:", url);
+            setTimeout(function () {
+                const response = "Response from " + url; // Simulated response
+                callback(response); // Call the callback with the response
+            }, 2000); // 2-second delay to simulate network latency
+        }
+
+        // Call fetchData with a URL and an anonymous callback function to handle the response
+        fetchData("http://127.0.0.1:5500/fetchData.html", function (response) {
+            console.log(response); // Log the simulated response after delay
+        });
+
+    </script>
+</body>
+
+</html>

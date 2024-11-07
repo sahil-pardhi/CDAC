@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fetchData(url, callback) {
+            console.log("Fetching data from:", url);
+            setTimeout(function () {
+                // Simulate random success or error
+                const isError = Math.random() > 0.5; // 50% chance of error
+
+                if (isError) {
+                    callback("Error: Unable to fetch data from " + url, null); // Call callback with error
+                } else {
+                    const response = "Response from " + url;
+                    callback(null, response); // Call callback with null error and the response
+                }
+            }, 2000); // 2-second delay to simulate network latency
+        }
+
+        // Call fetchData with a URL and an anonymous callback function to handle the response or error
+        fetchData("https://example.com/api/data", function (error, response) {
+            if (error) {
+                console.log(error); // Log error message if there's an error
+            } else {
+                console.log(response); // Log the response if successful
+            }
+        });
+
+    </script>
+</body>
+
+</html>
